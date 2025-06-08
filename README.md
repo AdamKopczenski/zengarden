@@ -9,8 +9,8 @@ According to the math I've done and the measurements above, a square should ther
 
 Some terms:
     - Logical coordinates (lc): locations on the board grid. In a full-size board, this'll be a1-g7 (r, c)
-    - Spatial coordinates (sc): locations in space that represent (mostly) the corners of the various pieces. (x increases to the east, y increases to the north, z increases upwards)
-    - Canvas coordinates (cc): locations on the canvas. (x increases to the right, y increases downward)
+    - Spatial coordinates (sc): locations in space that represent (mostly) the corners of the various pieces. (x increases to the east, y increases to the north, z increases upwards). These are real numbers.
+    - Canvas coordinates (cc): locations on the canvas. (x increases to the right, y increases downward) These are integers.
 
 The cabinet projection functions will translate Spatial coordinates into Canvas coordinates.
 
