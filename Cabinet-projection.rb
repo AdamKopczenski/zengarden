@@ -72,8 +72,10 @@ def convert_spatial(_element)
 end
 
 def convert_file(_filename)
-    output_name = _filename.sub('.', '_out.')
+    output_name = _filename.gsub(/(?=\.[^\\\/]*$)/, '_out')
     output_name += (output_name == _filename) ? '_out' : ''
+
+    pp _filename, output_name
 
     document = File.open(_filename) { |f| Nokogiri::XML(f) }
     document.xpath('//xmlns:spatial').each { |e| convert_spatial(e) }
@@ -83,7 +85,7 @@ end
 if(ARGV[0].nil?) then
     puts 'Usage .\Cabinet-projection.rb <input_filename>'
 else
-    convert_file('test_file2.xhtml')
+    convert_file(ARGV[0])
 end
 
 
