@@ -24,8 +24,6 @@ class CabinetProjectedCanvas
     end
 
     def to_cc(_sc)
-        pp _sc
-        puts _sc[:x].class
         { x: @origin_cx + (_sc[:x] + (_sc[:y] * 2.0 / 3.0)).round,
           y: @origin_cy - (_sc[:z] - (_sc[:y] * 2.0 / 3.0)).round }
     end
