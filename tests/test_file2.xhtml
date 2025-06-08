@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cabinet Projection Test #2</title>
+</head>
+<body>
+    <h1>400-wide canvas!</h1>
+    <spatial width="400" height="500">
+        <line x1="0" y1="0" z1="0" x2="100" y2="0" z2="0" style="stroke:black"/>
+        <line x1="0" y1="0" z1="0" x2="0" y2="100" z2="0" style="stroke:green"/>
+        <line x1="0" y1="0" z1="0" x2="0" y2="0" z2="100" style="stroke:red"/>
+
+        <!-- Let's draw a simple cube via the third-grade method! -->
+        <rect x="120" y="0" z="190" width="70" height="70" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; fill:none"/>
+        <line x1="120" y1="0" z1="190" x2="120" y2="70" z2="190" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+        <line x1="190" y1="0" z1="190" x2="190" y2="70" z2="190" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+        <line x1="190" y1="0" z1="120" x2="190" y2="70" z2="120" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+        <polyline points="120,70,190 190,70,190 190,70,120" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; fill:none"/>
+    </spatial>
+    <h1>500-square canvas!</h1>
+    <spatial style="background-color: lightgreen;">
+    <!-- Sixteen squares of a chessboard -->
+        <polygon points="150,0,0 150,40,0 190,40,0 190,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="150,40,0 150,80,0 190,80,0 190,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="150,80,0 150,120,0 190,120,0 190,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="150,120,0 150,160,0 190,160,0 190,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="190,0,0 190,40,0 230,40,0 230,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="190,40,0 190,80,0 230,80,0 230,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <!-- I moved this one to the bottom of the list because I made it hover for no good reason. -->
+        <polygon points="190,120,0 190,160,0 230,160,0 230,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="230,0,0 230,40,0 270,40,0 270,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="230,40,0 230,80,0 270,80,0 270,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="230,80,0 230,120,0 270,120,0 270,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="230,120,0 230,160,0 270,160,0 270,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="270,0,0 270,40,0 310,40,0 310,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="270,40,0 270,80,0 310,80,0 310,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <polygon points="270,80,0 270,120,0 310,120,0 310,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+        <polygon points="270,120,0 270,160,0 310,160,0 310,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+        <!-- See? -->
+        <polygon points="190,80,10 190,120,10 230,120,10 230,80,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+
+        <!-- I'll draw a star on one of the chessboard squares. -->
+        <polygon points="241,8,0 250,35,0 259,8,0 236,25,0 264,25,0" style="stroke:none; fill:orange" />
+
+        <!-- Two pieces of "glass" to sit on the board. -->
+        <circle r="20" cx="190" cy="60" cz="20" style="stroke:cyan; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:cyan; fill-opacity:0.4"/>
+        <rect x="210" y="20" z="80" width="80" height="80" style="stroke:yellow; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:yellow; fill-opacity:0.4"/>
+    </spatial>
+    <h1>200-wide canvas!</h1>
+    <spatial width="200" height="80" s_origin_cx="100" s_origin_cy="60">
+        <polygon points="-15,-15,0 -15,15,0 0,0,45" style="stroke: purple; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:purple; fill-opacity:0.4;"/>
+        <polygon points="-15,15,0 15,15,0 0,0,45" style="stroke: purple; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:orange; fill-opacity:0.4;"/>
+        <polygon points="15,-15,0 -15,-15,0 0,0,45" style="stroke: purple; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:purple; fill-opacity:0.4;"/>
+        <polygon points="15,-15,0 15,15,0 0,0,45" style="stroke: purple; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:purple; fill-opacity:0.4;"/>
+    </spatial>
+    <h1>The chessboard with better cropping!</h1>
+    <spatial width="300" height="200" s_origin_cx="-140" style="background-color:thistle;">
+        <!-- Sixteen squares of a chessboard -->
+            <polygon points="150,0,0 150,40,0 190,40,0 190,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="150,40,0 150,80,0 190,80,0 190,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="150,80,0 150,120,0 190,120,0 190,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="150,120,0 150,160,0 190,160,0 190,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="190,0,0 190,40,0 230,40,0 230,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="190,40,0 190,80,0 230,80,0 230,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <!-- I moved this one to the bottom of the list because I made it hover for no good reason. -->
+            <polygon points="190,120,0 190,160,0 230,160,0 230,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="230,0,0 230,40,0 270,40,0 270,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="230,40,0 230,80,0 270,80,0 270,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="230,80,0 230,120,0 270,120,0 270,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="230,120,0 230,160,0 270,160,0 270,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="270,0,0 270,40,0 310,40,0 310,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="270,40,0 270,80,0 310,80,0 310,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <polygon points="270,80,0 270,120,0 310,120,0 310,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+            <polygon points="270,120,0 270,160,0 310,160,0 310,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+            <!-- See? -->
+            <polygon points="190,80,10 190,120,10 230,120,10 230,80,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    
+            <!-- I'll draw a star on one of the chessboard squares. -->
+            <polygon points="241,8,0 250,35,0 259,8,0 236,25,0 264,25,0" style="stroke:none; fill:orange" />
+    
+            <!-- Two pieces of "glass" to sit on the board. -->
+            <circle r="20" cx="190" cy="60" cz="20" style="stroke:cyan; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:cyan; fill-opacity:0.4"/>
+            <rect x="210" y="20" z="80" width="80" height="80" style="stroke:yellow; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:yellow; fill-opacity:0.4"/>
+    </spatial>
+    <h1>Let's draw an Icebreaker piece!</h1>
+    <p>...which we really can't do because those are isometric! But here's a purple pyramid rotated 45&deg; with a shadow!</p>
+    <spatial width="140" height="100" s_origin_cx="70" s_origin_cy="70" style="background-color:green; stroke-width:6; stroke-linejoin:round; stroke-linecap:round;">
+        <polygon points="-40,-40,0 -40,40,0 40,40,0 40,-40,0" style="fill:lightgray;stroke:black;stroke-width:2;"/>
+        <polygon points="0,15,0 45,13,0 0,-15,0 15,0,0" style="fill:black;stroke:black;"/>
+        <polygon points="-15,0,0 0,0,42 0,-15,0" style="fill:purple;stroke:black;"/>
+        <polygon points="15,0,0 0,0,42 0,-15,0" style="fill:purple;stroke:black;"/>
+        <!-- <polygon points="15,0,0 0,15,0 -15,0,0 0,-15,0" style="stroke:yellow;stroke-width:1;"/> -->
+    </spatial>
+    </body>
+</html>

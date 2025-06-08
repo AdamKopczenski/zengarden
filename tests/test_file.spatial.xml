@@ -1,0 +1,42 @@
+<spatial>
+    <line x1="0" y1="0" z1="0" x2="100" y2="0" z2="0" style="stroke:black"/>
+    <line x1="0" y1="0" z1="0" x2="0" y2="100" z2="0" style="stroke:green"/>
+    <line x1="0" y1="0" z1="0" x2="0" y2="0" z2="100" style="stroke:red"/>
+
+    <rect x="0" y="0" z="300" width="50" height="50" style="stroke:blue; stroke-width:5; stroke-linejoin:round; stroke-linecap:round; fill:none" />
+
+    <!-- Sixteen squares of a chessboard -->
+    <polygon points="150,0,0 150,40,0 190,40,0 190,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="150,40,0 150,80,0 190,80,0 190,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="150,80,0 150,120,0 190,120,0 190,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="150,120,0 150,160,0 190,160,0 190,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="190,0,0 190,40,0 230,40,0 230,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="190,40,0 190,80,0 230,80,0 230,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <!-- I moved this one to the bottom of the list because I made it hover for no good reason. -->
+    <polygon points="190,120,0 190,160,0 230,160,0 230,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="230,0,0 230,40,0 270,40,0 270,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="230,40,0 230,80,0 270,80,0 270,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="230,80,0 230,120,0 270,120,0 270,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="230,120,0 230,160,0 270,160,0 270,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="270,0,0 270,40,0 310,40,0 310,0,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="270,40,0 270,80,0 310,80,0 310,40,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <polygon points="270,80,0 270,120,0 310,120,0 310,80,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+    <polygon points="270,120,0 270,160,0 310,160,0 310,120,0" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:black"/>
+    <!-- See? -->
+    <polygon points="190,80,10 190,120,10 230,120,10 230,80,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:white"/>
+
+    <!-- I'll draw a star on one of the chessboard squares. -->
+    <polygon points="241,8,0 250,35,0 259,8,0 236,25,0 264,25,0" style="stroke:none; fill:orange" />
+
+    <!-- Two pieces of "glass" to sit on the board. -->
+    <rect x="210" y="20" z="80" width="80" height="80" style="stroke:yellow; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:yellow; fill-opacity:0.4"/>
+    <rect x="170" y="60" z="40" width="40" height="40" style="stroke:yellow; stroke-width:4; stroke-opacity:0.9; stroke-linejoin:round; stroke-linecap:round; fill:yellow; fill-opacity:0.4"/>
+
+    <!-- Let's draw a simple cube via the third-grade method! -->
+    <rect x="120" y="0" z="190" width="70" height="70" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; fill:none"/>
+    <line x1="120" y1="0" z1="190" x2="120" y2="70" z2="190" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+    <line x1="190" y1="0" z1="190" x2="190" y2="70" z2="190" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+    <line x1="190" y1="0" z1="120" x2="190" y2="70" z2="120" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round;"/>
+    <polyline points="120,70,190 190,70,190 190,70,120" style="stroke:purple; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; fill:none"/>
+
+</spatial>
