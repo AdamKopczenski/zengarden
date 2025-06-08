@@ -75,8 +75,6 @@ def convert_file(_filename)
     output_name = _filename.gsub(/(?=\.[^\\\/]*$)/, '_out')
     output_name += (output_name == _filename) ? '_out' : ''
 
-    pp _filename, output_name
-
     document = File.open(_filename) { |f| Nokogiri::XML(f) }
     document.xpath('//xmlns:spatial').each { |e| convert_spatial(e) }
     File.write(output_name, document)
