@@ -15,3 +15,5 @@ Some terms:
 The cabinet projection functions will translate Spatial coordinates into Canvas coordinates.
 
 At the moment, run Cabinet-projection.rb with an (XML) file name, and it'll convert the <spatial> elements in that file into <svg> elements.
+
+The goal is to be able to run Zen-Garden-Board.rb to convert <zengardenboard> XML elements into a <spatial> elements. 
