@@ -12,6 +12,8 @@ Some terms:
     - Spatial coordinates (sc): locations in space that represent (mostly) the corners of the various pieces. (x increases to the east, y increases to the north, z increases upwards). These are real numbers.
     - Canvas coordinates (cc): locations on the canvas. (x increases to the right, y increases downward) These are integers.
 
+See README.xhtml for an illustration of the different coordinate systems.
+
 The cabinet projection functions will translate Spatial coordinates into Canvas coordinates.
 
 At the moment, run Cabinet-projection.rb with an (XML) file name, and it'll convert the <spatial> elements in that file into <svg> elements.

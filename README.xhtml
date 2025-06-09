@@ -5,13 +5,102 @@
     <meta charset="UTF-8"/>
     <title>Zengarden Readme</title>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
     <h1>Zen Garden readme file</h1>
     <p>Zen Garden is a game that I, Adam Kopczenski, made up that uses a Zendo set. The purpose of this little Ruby project is to help me make illustrations that I'll need when I publish it. I cannot draw to save my life, so it really is just easier to write a whole coding project to make this happen.</p>
     <h2>The purpose of this code</h2>
-    <p>Cabinet projection is a specific type of <a href="https://en.wikipedia.org/wiki/Oblique_projection">oblique projection</a>, a simple enough setn of rules that makes passable drawings of three-dimensional objects. What I'm aiming for here is a tool that'll turn a description of a board with pieces on it into an SVG image.</p>
+    <p>Cabinet projection is a specific subcase of <a href="https://en.wikipedia.org/wiki/Oblique_projection">oblique projection</a>, a simple enough set of rules that makes passable drawings of three-dimensional objects. What I'm aiming for here is a tool that'll turn a description of a board with pieces on it into an SVG image.</p>
     <h2>Types of coordinates</h2>
     <p>Because I'm playing with pieces on a grid, and polygons in space, and shapes on an SVG canvas, I'm going to wind up using the word "coordinates" to refer to three totally separate systems. Here they are:</p>
-    <p><b>Logical coordinates</b> refer to locations on a Zen Garden board. Things like "There is an upright blue rectangle piece at e3.</p>
+    <p><b>Logical coordinates</b> refer to locations on a Zen Garden board. Things like "There is an upright blue rectangle piece at e3."</p>
+    <svg width="687" height="287" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="10,277 410,277 677,10 277,10" style="stroke:brown; stroke-width:5; stroke-linejoin:round; fill:none"/>
+        <polygon points="10,277 110,277 177,210 77,210" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="110,277 210,277 277,210 177,210" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="210,277 310,277 377,210 277,210" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="310,277 410,277 477,210 377,210" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="77,210 177,210 243,144 143,144" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="177,210 277,210 343,144 243,144" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="277,210 377,210 443,144 343,144" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="377,210 477,210 543,144 443,144" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="143,144 243,144 310,77 210,77" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="243,144 343,144 410,77 310,77" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="343,144 443,144 510,77 410,77" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="443,144 543,144 610,77 510,77" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="210,77 310,77 377,10 277,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="310,77 410,77 477,10 377,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+        <polygon points="410,77 510,77 577,10 477,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:khaki"/>
+        <polygon points="510,77 610,77 677,10 577,10" style="stroke:gray; stroke-width:2; stroke-linejoin:round; fill:darkolivegreen"/>
+
+        <!-- When the polygon starts with <polygon points="568,54...
+             the Text should start with   <text x="583" y="51">... -->
+        <polygon points="68,254 88,234 118,234 98,254" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="83" y="250">g1</text>
+        <polygon points="135,247 142,240 152,240 145,247" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="185,247 192,240 202,240 195,247" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="235,247 242,240 252,240 245,247" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="268,254 288,234 318,234 298,254" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="283" y="250">g5</text>
+        <polygon points="335,247 342,240 352,240 345,247" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="385,247 392,240 402,240 395,247" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="102,220 122,200 152,200 132,220" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="119" y="216">f1</text>
+        <polygon points="218,214 225,207 235,207 228,214" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="318,214 325,207 335,207 328,214" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="418,214 425,207 435,207 428,214" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="135,187 155,167 185,167 165,187" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="149" y="183">e1</text>
+        <polygon points="202,180 208,174 218,174 212,180" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="252,180 258,174 268,174 262,180" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="302,180 308,174 318,174 312,180" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="352,180 358,174 368,174 362,180" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="385,187 405,167 435,167 415,187" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="399" y="183">e6</text>
+        <polygon points="452,180 458,174 468,174 462,180" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="168,154 188,134 218,134 198,154" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="182" y="150">d1</text>
+        <polygon points="268,154 288,134 318,134 298,154" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="282" y="150">d3</text>
+        <polygon points="385,147 392,140 402,140 395,147" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="485,147 492,140 502,140 495,147" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="202,120 222,100 252,100 232,120" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="217" y="116">c1</text>
+        <polygon points="268,114 275,107 285,107 278,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="318,114 325,107 335,107 328,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="368,114 375,107 385,107 378,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="418,114 425,107 435,107 428,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="468,114 475,107 485,107 478,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="518,114 525,107 535,107 528,114" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="235,87 255,67 285,67 265,87" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="251" y="83">b1</text>
+        <polygon points="352,80 358,74 368,74 362,80" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="452,80 458,74 468,74 462,80" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="552,80 558,74 568,74 562,80" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <polygon points="268,54 288,34 318,34 298,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="283" y="50">a1</text>
+        <polygon points="318,54 338,34 368,34 348,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="333" y="50">a2</text>
+        <polygon points="368,54 388,34 418,34 398,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="382" y="50">a3</text>
+        <polygon points="418,54 438,34 468,34 448,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="432" y="50">a4</text>
+        <polygon points="468,54 488,34 518,34 498,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="482" y="50">a5</text>
+        <polygon points="518,54 538,34 568,34 548,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="532" y="50">a6</text>
+        <polygon points="568,54 588,34 618,34 598,54" style="stroke:black; stroke-width:0.5; stroke-linejoin:round; fill:white"/>
+        <text x="583" y="50">a7</text>
+    </svg>
+    <p>Logical coordinates are given in the form (row, col). The first coordinate, row, is a letter that increases to the south. The second coordinate, col, is a number that increase to the east. Zen Garden is played on a 4×4 grid, but pieces can be placed on the line between two squares, so a 7×7 coordinate grid is needed for a game position. (The generator will actually work with grids of any size, of course.)</p>
+
+    <svg width="187" height="87" xmlns="http://www.w3.org/2000/svg">
+        <line x1="87" y1="10" x2="12" y2="85" style="stroke:darkred"/>
+        <polygon points="10,87 16,85 12,81" style="fill:darkred"/>
+        <text x="-40" y="82" style="fill:darkred;font-family:cursive" transform="rotate(-45)">row</text>
+        <line x1="87" y1="10" x2="184" y2="10" style="stroke:darkblue;"/>
+        <polygon points="187,10 181,7 181,13" style="fill:darkblue"/>
+        <text x="154" y="25" style="fill:darkblue;font-family:cursive">col</text>
+        <circle cx="87" cy="10" r="3" style="fill:black"/>
+    </svg>
 </body>
 </html>
